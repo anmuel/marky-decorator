@@ -1,4 +1,4 @@
-# marky-decorator [![Build Status](https://travis-ci.org/anmuel/marky-decorator.svg?branch=master)](https://travis-ci.org/anmuel/marky-decorator)
+# marky-decorator [![NPM](https://nodei.co/npm/marky-decorator.png)](https://npmjs.org/package/marky-decorator) [![Build Status](https://travis-ci.org/anmuel/marky-decorator.svg?branch=master)](https://travis-ci.org/anmuel/marky-decorator)
 
 > A method-decorator for [marky](https://github.com/nolanlawson/marky#readme) to easily measure a method's performance.
 
