@@ -1,0 +1,42 @@
+{
+  "name": "marky-decorator",
+  "version": "1.0.0",
+  "description": "A decorator interface for the marky performance measurement library",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "author": "Andreas Müller <anmuel86@gmail.com>",
+  "scripts": {
+    "build": "tsc",
+    "test": "nyc mocha",
+    "prepublishOnly": "npm run test && npm run build && pkg-ok"
+  },
+  "keywords": [
+    "marky",
+    "performance",
+    "measurement"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "marky": "^1.2.1"
+  },
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^0.1.3",
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "husky": "^3.0.8",
+    "mocha": "^6.2.1",
+    "nyc": "^14.1.1",
+    "source-map-support": "^0.5.13",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  },
+  "nyc": {
+    "extends": "@istanbuljs/nyc-config-typescript",
+    "all": true,
+    "check-coverage": true
+  }
+}
