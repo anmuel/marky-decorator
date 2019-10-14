@@ -1,7 +1,7 @@
-import * as marky from 'marky';
+import * as marky from "marky";
 
-export const measure = function(name: string = '') {
-  return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+export const measure = (name: string = "") => {
+  return function(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
     if (name.length === 0) {
       name = propertyKey;
     }
