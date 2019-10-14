@@ -14,7 +14,7 @@
     "test": "nyc mocha",
     "lint": "tslint src/**/*.ts spec/**/*.ts",
     "posttest": "yarn lint",
-    "prepublishOnly": "npm run test && npm run build && pkg-ok"
+    "prepublishOnly": "yarn test && yarn build && pkg-ok"
   },
   "keywords": [
     "marky",
