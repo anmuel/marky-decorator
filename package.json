@@ -6,6 +6,7 @@
   "files": [
     "lib"
   ],
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/anmuel/marky-decorator",
   "homepage": "https://github.com/anmuel/marky-decorator",
   "author": "Andreas Müller <anmuel86@gmail.com>",
