@@ -1,6 +1,8 @@
 import * as marky from "marky";
 
 export const measure = (name: string = "") => {
+  // The function statement is needed for the arguments reference in the body
+  // tslint:disable-next-line:only-arrow-functions
   return function(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
     if (name.length === 0) {
       name = propertyKey;
@@ -8,8 +10,7 @@ export const measure = (name: string = "") => {
 
     marky.mark(name);
 
-    // @ts-ignore
-    descriptor.value.apply(this, arguments);
+    descriptor.value.apply(target, arguments);
 
     marky.stop(name);
   };
