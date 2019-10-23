@@ -1,6 +1,6 @@
 {
   "name": "marky-decorator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A decorator interface for the marky performance measurement library",
   "main": "lib/index.js",
   "files": [
