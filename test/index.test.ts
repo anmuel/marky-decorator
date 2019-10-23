@@ -10,12 +10,16 @@ class C {
     for (let i = 0; i < 2000000; i++) {
       // do something
     }
-    return true;
+    return this.helperFn();
   }
 
   @measure(identifier)
   public customFn() {
     return 1;
+  }
+
+  private helperFn() {
+    return true;
   }
 }
 
